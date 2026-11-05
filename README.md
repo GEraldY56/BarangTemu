@@ -25,7 +25,7 @@
 - **Nama:** Alvaro Geraldy
 - **Kelas:** XII RPL
 - **Sekolah:** SMK Negeri 20 Jakarta
-- **Tahun:** 2024
+- **Tahun:** 2026
 
 ---
 
