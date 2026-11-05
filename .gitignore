@@ -1,0 +1,41 @@
+
+# Environment files - sensitive information
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor and IDE
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+
+# PHPUnit
+/.phpunit.cache
+.phpunit.result.cache
+
+# Authentication
+/auth.json
+
+# Laravel generated files
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+Homestead.json
+Homestead.yaml
+
+/test_login.php
+/public/test.html
