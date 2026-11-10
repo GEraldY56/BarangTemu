@@ -31,6 +31,7 @@
 
 ## Daftar Isi
 
+- [Dokumentasi Flowchart](#dokumentasi-flowchart)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 - [Persyaratan Sistem](#persyaratan-sistem)
 - [Instalasi](#instalasi)
@@ -44,6 +45,36 @@
 - [Troubleshooting](#troubleshooting)
 - [Pengembangan Selanjutnya](#pengembangan-selanjutnya)
 - [Lisensi](#lisensi)
+
+---
+
+## 📊 Dokumentasi Flowchart
+
+Dokumentasi flowchart lengkap sistem BarangTemu tersedia dalam format Mermaid dan PDF:
+
+### Flowchart yang Tersedia:
+
+1. **[Flowchart Login & Register](docs/flowcharts/01-flowchart-login-register.md)**
+   - Proses registrasi pengguna baru
+   - Alur login dengan role-based redirect
+   - Proses logout dan session management
+
+2. **[Flowchart Pelaporan Barang](docs/flowcharts/02-flowchart-pelaporan-barang.md)**
+   - Create report (Barang Hilang/Temuan)
+   - Upload foto dan validasi
+   - Edit dan delete report dengan authorization
+
+3. **[Flowchart Pengelolaan Admin](docs/flowcharts/03-flowchart-pengelolaan-admin.md)**
+   - Admin dashboard dan statistik
+   - Update status laporan
+   - Delete laporan dengan permission check
+
+### Format Dokumentasi:
+- 📄 **Markdown (.md)** - Format Mermaid untuk edit dan version control
+- 📑 **PDF** - Format presentasi untuk USK dan dokumentasi cetak
+- 🎨 **Kompatibel Whimsical** - Dapat diimport langsung ke Whimsical
+
+**Lihat:** [README Flowchart Lengkap](docs/flowcharts/README.md) untuk panduan penggunaan dan import ke Whimsical.
 
 ---
 
@@ -741,7 +772,7 @@ Untuk pertanyaan teknis atau bug report, silakan buat issue di repository GitHub
 
 ---
 
-**© 2024 BarangTemu - SMK Negeri 20 Jakarta**
+**© 2026 BarangTemu - SMK Negeri 20 Jakarta**
 
 *Membantu menemukan kembali barang berharga di lingkungan sekolah* 🎒✨
 2. Klik **Start** pada **Apache**

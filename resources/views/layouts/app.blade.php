@@ -170,18 +170,12 @@
 
     <!-- Footer -->
     <footer class="w-full bg-surface-container border-t border-outline-variant mt-auto">
-        <div class="max-w-7xl mx-auto py-8 px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="space-y-1 text-center md:text-left">
+        <div class="max-w-7xl mx-auto py-8 px-6">
+            <div class="space-y-1 text-center">
                 <div class="font-bold text-primary text-base">BarangTemu Sekolah</div>
                 <p class="text-xs text-on-surface-variant">
-                    © 2024 BarangTemu Sekolah. Sistem Pelaporan Barang Hilang & Temuan.
+                    © 2026 BarangTemu Sekolah. Sistem Pelaporan Barang Hilang & Temuan.
                 </p>
-            </div>
-            <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-on-surface-variant">
-                <a href="#" class="hover:text-secondary transition-colors">Panduan Siswa</a>
-                <a href="#" class="hover:text-secondary transition-colors">Kebijakan Pengambilan</a>
-                <a href="#" class="hover:text-secondary transition-colors">Pusat Informasi Sarpras</a>
-                <a href="#" class="hover:text-secondary transition-colors">Kontak Admin</a>
             </div>
         </div>
     </footer>

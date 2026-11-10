@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
@@ -38,8 +37,7 @@ class RegisterController extends Controller
             'role' => 'user', // Default role is user
         ]);
 
-        Auth::login($user);
-
-        return redirect()->route('home')->with('success', 'Registrasi berhasil! Selamat datang.');
+        // Redirect to login page without auto-login
+        return redirect()->route('login')->with('success', 'Registrasi berhasil! Silakan login menggunakan akun yang telah dibuat.');
     }
 }

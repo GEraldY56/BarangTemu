@@ -17,22 +17,6 @@ use App\Http\Controllers\Auth\RegisterController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/catalog', [HomeController::class, 'catalog'])->name('catalog');
 
-// Test route sederhana untuk debugging
-Route::get('/test', function() {
-    return 'Laravel Server is Working! ✅';
-});
-
-// Test controller directly
-Route::get('/test-controller', function() {
-    $controller = new \App\Http\Controllers\ReportController();
-    return 'Controller exists! Trying to call create method...';
-});
-
-// Test view directly
-Route::get('/test-view', function() {
-    return view('reports.create');
-});
-
 // Report Create Route - MUST BE BEFORE {id} route
 Route::get('/reports/create', [ReportController::class, 'create'])->name('reports.create');
 
