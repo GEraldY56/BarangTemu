@@ -13,14 +13,14 @@
             <p class="text-sm text-outline">Daftar untuk mulai melaporkan barang hilang atau temuan</p>
         </div>
 
-        <form action="{{ route('register') }}" method="POST" class="space-y-5">
+        <form action="{{ route('register') }}" method="POST" class="space-y-5" autocomplete="off">
             @csrf
 
             <div class="space-y-2">
                 <label for="name" class="text-sm font-semibold text-on-surface block">Nama Lengkap</label>
-                <input type="text" name="name" id="name" value="{{ old('name') }}" required autofocus
+                <input type="text" name="name" id="name" value="{{ $errors->any() ? old('name') : '' }}" required autofocus
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('name') border-error @enderror"
-                       placeholder=""/>
+                       placeholder="" autocomplete="name"/>
                 @error('name')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror
@@ -28,9 +28,9 @@
 
             <div class="space-y-2">
                 <label for="email" class="text-sm font-semibold text-on-surface block">Email</label>
-                <input type="email" name="email" id="email" value="{{ old('email') }}" required
+                <input type="email" name="email" id="email" value="{{ $errors->any() ? old('email') : '' }}" required
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('email') border-error @enderror"
-                       placeholder=""/>
+                       placeholder="" autocomplete="email"/>
                 @error('email')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror
@@ -38,9 +38,9 @@
 
             <div class="space-y-2">
                 <label for="class" class="text-sm font-semibold text-on-surface block">Kelas</label>
-                <input type="text" name="class" id="class" value="{{ old('class') }}" required
+                <input type="text" name="class" id="class" value="{{ $errors->any() ? old('class') : '' }}" required
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('class') border-error @enderror"
-                       placeholder=""/>
+                       placeholder="" autocomplete="off"/>
                 @error('class')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror
@@ -50,7 +50,7 @@
                 <label for="password" class="text-sm font-semibold text-on-surface block">Password</label>
                 <input type="password" name="password" id="password" required
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('password') border-error @enderror"
-                       placeholder="••••••••"/>
+                       placeholder="••••••••" autocomplete="new-password"/>
                 @error('password')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror
@@ -60,7 +60,7 @@
                 <label for="password_confirmation" class="text-sm font-semibold text-on-surface block">Konfirmasi Password</label>
                 <input type="password" name="password_confirmation" id="password_confirmation" required
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface"
-                       placeholder="••••••••"/>
+                       placeholder="••••••••" autocomplete="new-password"/>
             </div>
 
             <button type="submit" class="w-full bg-primary-container text-on-primary text-sm font-bold px-6 py-3.5 rounded-xl shadow-md hover:bg-primary transition-all flex items-center justify-center gap-2">

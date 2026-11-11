@@ -13,14 +13,14 @@
             <p class="text-sm text-outline">Login untuk melaporkan atau melacak barang Anda</p>
         </div>
 
-        <form action="{{ route('login') }}" method="POST" class="space-y-5">
+        <form action="{{ route('login') }}" method="POST" class="space-y-5" autocomplete="on">
             @csrf
 
             <div class="space-y-2">
                 <label for="email" class="text-sm font-semibold text-on-surface block">Email</label>
-                <input type="email" name="email" id="email" value="{{ old('email') }}" required autofocus
+                <input type="email" name="email" id="email" value="" required autofocus
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('email') border-error @enderror"
-                       placeholder="nama@email.com"/>
+                       placeholder="nama@email.com" autocomplete="username"/>
                 @error('email')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror
@@ -30,7 +30,7 @@
                 <label for="password" class="text-sm font-semibold text-on-surface block">Password</label>
                 <input type="password" name="password" id="password" required
                        class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface-container-lowest focus:border-secondary focus:ring-2 focus:ring-secondary-fixed outline-none text-on-surface @error('password') border-error @enderror"
-                       placeholder="••••••••"/>
+                       placeholder="••••••••" autocomplete="current-password"/>
                 @error('password')
                     <p class="text-xs text-error mt-1">{{ $message }}</p>
                 @enderror

@@ -37,6 +37,9 @@ class RegisterController extends Controller
             'role' => 'user', // Default role is user
         ]);
 
+        // Flush old input from session to prevent form data leakage
+        request()->session()->forget('_old_input');
+        
         // Redirect to login page without auto-login
         return redirect()->route('login')->with('success', 'Registrasi berhasil! Silakan login menggunakan akun yang telah dibuat.');
     }
