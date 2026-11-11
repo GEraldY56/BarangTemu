@@ -145,33 +145,6 @@
     </div>
     @endif
 
-    <!-- API Info Card -->
-    <div class="bg-surface-container-low p-6 rounded-3xl border border-outline-variant space-y-4">
-        <div class="flex items-center gap-2 text-primary font-bold text-base">
-            <span class="material-symbols-outlined">integration_instructions</span>
-            Arsitektur Integrasi RESTful API & MySQL Mapping
-        </div>
-        <p class="text-sm text-on-surface-variant">
-            Struktur data reports siap dipetakan langsung ke tabel MySQL atau dihubungkan ke endpoint backend PHP/Laravel / Node.js Express.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 font-mono text-xs">
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant">
-                <span class="text-tertiary font-bold">GET</span> /api/reports<br/>
-                <span class="text-outline text-[11px]">Ambil semua data laporan</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant">
-                <span class="text-primary font-bold">POST</span> /api/reports<br/>
-                <span class="text-outline text-[11px]">Simpan laporan baru</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant">
-                <span class="text-secondary font-bold">PUT</span> /api/reports/:id<br/>
-                <span class="text-outline text-[11px]">Perbarui status klaim</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant">
-                <span class="text-error font-bold">DELETE</span> /api/reports/:id<br/>
-                <span class="text-outline text-[11px]">Hapus arsip laporan</span>
-            </div>
-        </div>
-    </div>
+
 </div>
 @endsection
