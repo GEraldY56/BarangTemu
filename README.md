@@ -32,6 +32,7 @@
 ## Daftar Isi
 
 - [Dokumentasi Flowchart](#dokumentasi-flowchart)
+- [Product Requirement Document](#product-requirement-document)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 - [Persyaratan Sistem](#persyaratan-sistem)
 - [Instalasi](#instalasi)
@@ -75,6 +76,32 @@ Dokumentasi flowchart lengkap sistem BarangTemu tersedia dalam format Mermaid da
 - 🎨 **Kompatibel Whimsical** - Dapat diimport langsung ke Whimsical
 
 **Lihat:** [README Flowchart Lengkap](docs/flowcharts/README.md) untuk panduan penggunaan dan import ke Whimsical.
+
+---
+
+## 📄 Product Requirement Document
+
+Dokumentasi lengkap mengenai requirement, fitur, user stories, technical architecture, dan roadmap project BarangTemu:
+
+**[📋 Product Requirement Document (PRD)](docs/PRODUCT_REQUIREMENT_DOCUMENT.md)**
+
+### Isi PRD:
+- Executive Summary
+- Problem Statement & Goals
+- Target Users & User Stories  
+- Features & Requirements (detailed)
+- Technical Architecture & Database Schema
+- UI/UX Design System
+- Security & Privacy
+- Performance Requirements
+- Success Metrics
+- Future Roadmap
+
+Dokumen ini berguna untuk:
+- 📊 **Presentasi USK** - Menjelaskan scope dan requirement project
+- 👥 **Stakeholder Communication** - Reference untuk guru/penguji
+- 🔧 **Development Guide** - Blueprint untuk future development
+- 📈 **Project Evaluation** - Measure success metrics
 
 ---
 
